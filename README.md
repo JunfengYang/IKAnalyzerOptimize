@@ -11,7 +11,7 @@ New features:
 3. A ChineseSpaceFilterFactory to remove space after "ShingleFilterFactory"
 	For example, "计算机算法导论" when doing the shingle for auto-complete,
 	It will generate terms "计算机"， “计算机 算法”， “计算机 算法 导论”， “算法”， “算法 导论”，“导论”
-	So, it we input the prefix of the whole input term like "计算机算", we want it return "计算计算法"， “计算机算法导论” 
+	So, it we input the prefix of the whole input term like "计算机算", we want it return "计算机算法"， “计算机算法导论” 
 	which not contain space between phrases.
 4. English word segmentation for possessive case.
 	"apple's" will be "apple's" and "apple".
@@ -19,6 +19,7 @@ New features:
 
 Example in solr schema.xml:
 
+```xml
 <fieldType name="text_ik" class="solr.TextField" positionIncrementGap="100" >
   <analyzer type="index" >
     <tokenizer class="org.wltea.analyzer.lucene.IKAnalyzerSolrFactory" useSmart="false" />
@@ -27,3 +28,4 @@ Example in solr schema.xml:
     <tokenizer class="org.wltea.analyzer.lucene.IKAnalyzerSolrFactory" useSmart="true" />
   </analyzer>
 </fieldType>
+```
