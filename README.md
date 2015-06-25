@@ -16,6 +16,7 @@ New features:
 4. English word segmentation for possessive case.
 	"apple's" will be "apple's" and "apple".
 	"its'" will be "its"
+5. For solr version upper than 4.8, class "org.apache.lucene.util.AttributeSource.AttributeFactory" to "org.apache.lucene.util.AttributeFactory"
 
 Example in solr schema.xml:
 
