@@ -31,6 +31,7 @@ import java.util.Map;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.util.TokenizerFactory;
 import org.apache.lucene.util.AttributeSource.AttributeFactory;
+//import org.apache.lucene.util.AttributeFactory; // For solr version upper than 4.8
 
 /**
  * IKAnalyzerSolrFactory
