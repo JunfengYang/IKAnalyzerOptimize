@@ -2,7 +2,7 @@
 Base on IK Analyzer release 5.0. Optimize the original IKAnalyzer to support lucene 4.0 -  4.6.
 Upper version none test, please give me feed back.
 
-I'm mainly used in Solr 4.4 .
+I'm mainly used in Solr 4.4 and 4.10 .
 
 New features:
 
